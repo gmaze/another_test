@@ -1,0 +1,50 @@
+title: "Euro-Argo-Dev Documentation"
+copyright: ""
+author: ""
+logo: images/logo_euroargo_square.png
+
+execute:
+  execute_notebooks: "off"
+repository:
+  url: https://github.com/euroargodev/online_documentation
+  path_to_book: content
+  branch: main
+html:
+  use_repository_button: true
+  use_edit_page_button: true
+  use_issues_button: false
+  home_page_in_navbar: false
+  announcement: "⚠️ This is a template website ⚠️"
+  extra_footer: |
+    <div> ️
+      <a href="https://github.com/euroargodev/online_documentation/issues/new?labels=doc-edit&template=doc_edit_template.md" target="_blank">✏ Click here to make a suggestion about this page</a>
+      | <a href="https://github.com/euroargodev/online_documentation/issues/new?labels=doc-error&template=doc_error_template.md" target="_blank">🚨 Report an error on this page</a>
+    </div>
+    <hr>
+    <p>  By the Euro-Argo Dev community using
+      <a href="https://jupyterbook.org/intro.html" target="_blank">Jupyter Book</a>.
+      
+      This work is licensed under a 
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons Attribution 4.0 Generic License.</a> 
+    
+    <div>
+      <a href="https://metrics.green-coding.io/ci.html?repo=euroargodev%2Fonline_documentation&amp;branch=main&amp;workflow=104534311"><img src="https://api.green-coding.io/v1/ci/badge/get?repo=euroargodev/online_documentation&amp;branch=main&amp;workflow=104534311"></a>   
+    </div>
+    </p>
+  extra_navbar: |
+    <div>
+      <a href="https://metrics.green-coding.io/ci.html?repo=euroargodev%2Fonline_documentation&amp;branch=main&amp;workflow=104534311"><img src="https://api.green-coding.io/v1/ci/badge/get?repo=euroargodev/online_documentation&amp;branch=main&amp;workflow=104534311"></a>   
+    </div>
+
+sphinx:
+  local_extensions:
+    apastyle: _ext/
+    bracket_citation_style: _ext/
+  config:
+    bibtex_default_style: myapastyle
+    bibtex_reference_style: author_year_round
+    html_show_copyright: false
+
+bibtex_reference_style      : author_year_round
+bibtex_default_style        : myapastyle
+bibtex_bibfiles             : [biblio.bib]
